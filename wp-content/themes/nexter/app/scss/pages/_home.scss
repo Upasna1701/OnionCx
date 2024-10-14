@@ -1,0 +1,170 @@
+.homepage-banner{
+    .kt-row-layout-equal{
+        grid-template-columns: 54% 46% !important;
+        padding-block: rem(50px) !important;
+    }
+    .homepage-banner-content{
+        h1{
+            margin-bottom: rem(25px) !important;
+        }
+    }
+    .banner-image{
+        width:100%;
+    }
+}
+.explore-analytics{
+    margin-block: rem(80px);
+    .analytics-inner-column{
+        h3{
+            text-align: left;
+            margin-block:rem(20px) rem(10px);
+        }
+    }
+}
+.increased-con-row{
+    margin-top: rem(50px) !important;
+    .conversion-img{
+        max-width: rem(499px);
+    }
+    .conversion-accordion{
+        min-width: rem(520px);
+        .kt-accordion-inner-wrap.kt-accordion-initialized{
+            gap: 0;
+        
+            .wp-block-kadence-pane{
+                border-bottom: 1px solid #ffffff40;
+                &:last-child{
+                    border-bottom: 0;
+                    
+                }
+                .kt-blocks-accordion-header{
+                    padding-block: rem(30px) !important;
+                    .kt-blocks-accordion-title{
+                        @include typo(rem(24px),$font-m,null);
+                    }
+                }
+                .kt-accordion-panel-active{
+                    padding-block: rem(15px) 0 !important;
+                }
+                .kt-accordion-panel-inner{
+                    p{
+                        margin-bottom: 0 !important;
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+.tools-main-con{
+    background: linear-gradient(270deg, rgba(233,246,252,1) 0%, rgba(251,232,241,1) 100%);
+    padding-block: rem(80px);
+
+    .tools-tab{
+        .tpgb-tabs-wrapper{
+            gap: rem(40px);
+            .tpgb-tabs-nav-wrapper{
+                min-width: rem(290px);
+                align-items: flex-start;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width:rem(7px);
+                    height: 100%;
+                    background: $white;
+                    left:-10%;
+                }
+                .tpgb-tabs-nav{
+                    .tpgb-tab-header{
+                        margin-bottom: 0 !important;
+                        padding: 0 0 rem(20px) 0;
+                        // padding-left: 0;
+                        span{
+                            @include typo(rem(16px),$font-m,#666666);
+                        }
+                    }
+                    .active{
+                        span{
+                            color: $sc;
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width:rem(7px);
+                            height: 100%;
+                            background: $pc;
+                            left:-15.5%;
+                        }
+                    }
+                } 
+            }
+            .tpgb-tabs-content-wrapper{
+                max-width: 60%;
+                .tools-heading{
+                    @include typo(rem(24px),$font-sb,$sc);
+                    background: $white;
+                    padding: rem(10px);
+                    border-radius: rem(6px);
+                    margin-bottom: rem(20px);
+                    width: fit-content;
+                }
+                .wp-block-gallery{
+                    margin-top: rem(60px);
+                }
+
+            }
+        }
+    }
+}
+.tools-inner-row{
+}
+
+.homepage-resources-sec{
+    padding-block: rem(80px);
+    .homepage-blogs{
+        .entry-content-wrap{
+            padding: rem(12px) 0 !important;
+            .entry-header{
+                .entry-taxonomies{
+                    background: #FBE8F1;
+                    padding: rem(2.5px) rem(10px);
+                    border-radius: rem(30px);
+                    text-transform: capitalize;
+                    margin-bottom: rem(10px);
+                    width: fit-content;
+                    a{
+                        @include typo(rem(14px),$font-b,#944D9C);    
+                    }
+                }
+                .posted-on{
+                    .entry-date{
+                        @include typo(rem(14px),$font-r,#666666);
+                    }
+
+                }
+                h2{
+                    @include typo(rem(24px),$font-sb,$sc,rem(32px));
+                    a{
+                        @include typo(rem(24px),$font-sb,$sc);
+                        &:hover{
+                            color: #944D9C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.discover-secret-row{
+    margin-bottom: rem(80px);
+    .discover-secret{
+        padding-block: rem(50px);
+        h2{
+            margin-bottom: rem(20px);
+        }
+        p{
+            max-width: 75%;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+
+@include max(d-1680) {
+    html,
+    body {
+        $rem-size: 17.5px;
+        font-size: $rem-size;
+    }
+}
+@include max(d-1600) {
+    html,
+    body {
+        $rem-size: 17px;
+        font-size: $rem-size;
+    }
+}
+@include max(d-1440) {
+    html,
+    body {
+        $rem-size: 16px;
+        font-size: $rem-size;
+    }
+}
+@include max(d-1366) {
+    html,
+    body {
+        $rem-size: 15px;
+        font-size: $rem-size;
+    }
+}
+@include max(d-1280) {
+    html,
+    body {
+        $rem-size: 14px;
+        font-size: $rem-size;
+    }
+}
+@include max(d-1024) {
+    html,
+    body {
+        $rem-size: 12px;
+        font-size: $rem-size;
+    }
+}
+@include max(d-991) {
+    html,
+    body {
+        $rem-size: 10px;
+        font-size: $rem-size;
+    }
+}
+
+@include max(d-600) {
+    .container{
+        padding-inline: 22px;
+    }
+    html,
+    body {
+        $rem-size: 16px;
+        font-size: $rem-size;
+    }
+    .h2,
+    h2 {
+        @include typo(27px,$font-m,$pc,36px);
+        margin-bottom: 16px;
+    }
+    .h3,
+    h3 {
+        @include typo(25px,$font-m,$pc,36px);
+        margin-bottom: 16px; 
+    }
+    .dry-containers{
+        overflow-x: hidden;
+    }
+}
