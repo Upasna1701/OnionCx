@@ -1,1 +1,1 @@
-!function(n){"use strict";n(document).ready(function(){}),document.addEventListener("DOMContentLoaded",function(){const n=document.querySelectorAll(".kt-blocks-accordion-header");n.forEach(n=>{n.addEventListener("click",function(){1===document.querySelectorAll(".kt-accordion-panel-active").length&&n.classList.contains("kt-accordion-panel-active")})})})}.call(window,window.jQuery);
+!function(n){"use strict";n(document).ready(function(){})}.call(window,window.jQuery);
